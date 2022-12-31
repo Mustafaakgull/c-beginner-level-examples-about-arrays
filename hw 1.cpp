@@ -2,9 +2,10 @@
  
 main()
 {
+	//as=array size
     int array[100],x,as;
     int i,j;
-    
+   
     printf("Please enter the size of the array: ");
     scanf("%d",&as);
     
@@ -20,7 +21,7 @@ main()
         for(j=i+1;j<as+1;j++)
         {
             if(array[j] < array[i])
-			{
+	    {	
                 x=array[i];
                 array[i] = array[j];
                 array[j] = x;
